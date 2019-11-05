@@ -18,10 +18,10 @@ public class Descuento {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        ingresarNumerosParaDescontar();
+        realizarDescuento();
     }
     
-    public static void ingresarNumerosParaDescontar(){
+    public static void realizarDescuento(){
     double descuento = 0;
     double precio = 0;
     double resultado = 0;
