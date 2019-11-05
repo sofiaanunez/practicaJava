@@ -28,7 +28,9 @@ public class Descuento {
     
        Scanner teclado = new Scanner(System.in);
         
-       System.out.print("Ingrese precio del producto: ");
+        System.out.println("Calculando el descuento de un producto");
+       
+       System.out.print("\nIngrese precio del producto: ");
         precio = teclado.nextDouble();
         
        System.out.print("Ingrese descuento para ese producto: ");
@@ -38,10 +40,13 @@ public class Descuento {
         descuento = descuento / 100;
         double calculoDescuentoPorPrecio = descuento * precio;
         resultado = precio - calculoDescuentoPorPrecio;
-                System.out.println(resultado);
+                
+                System.out.println("\nPRECIO: " + precio);
+                System.out.println("DESCUENTO: " + "-" + calculoDescuentoPorPrecio);
+                System.out.println("TOTAL:" + resultado);
         }
         else{
-            System.out.println("ERROR: Ingrese valores positivos.");
+            System.out.println("\nERROR: Ingrese valores positivos.");
         }
     }
        
